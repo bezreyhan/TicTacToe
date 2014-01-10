@@ -1,78 +1,40 @@
 <!DOCTYPE html> 
-
-<<html>
+test
+<html> 
 <head>
 	<title>Tables</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="tictac.js"></script>
 </head>
-<body style="font-family:Arial">
-	<ol>
-		<li>Andre Agassi</li>
-		<li>Djokavitch</li>
-		<li>Nadal</li>
-	</ol>	
+<body>
+	<div id="buttons">
+		<button onclick="openUp()">Start Game</button>
+		<button onclick="reset()">New Game</button>
+	</div>	
+	<div id="frame">
+		<h1> Tic Tac Toe </h1>	
+		<div class="row">
+			<div id="r0c0" class="box" onclick="clicked(this)">&nbsp;</div>
+			<div id="r0c1" class="box" onclick="clicked(this)">&nbsp;</div>
+			<div id="r0c2" class="box no_right" onclick="clicked(this)">&nbsp;</div>
+		</div>
 
-	<table>
-		<tr><th>Bandge Name</th><th>Difficulty</th></tr>
-		<tr><td>First Aid</td><td>3</td></tr>
-		<tr><td>Canoeing</td><td>1</td></tr>
-	</table>
-
-	<table>
-		<tr>
-			<th>Food</th><th>Nutrition</th>
-		</tr>
-		<tr>
-			<td>Burger</td><td>Protein</td>
-		</tr>
-		<tr>
-			<td>Fries</td><td>Not Much</td>	
-		</tr>
-		<tr>
-			<td>Celery</td><td>Fiber</td>
-		</tr>
-
-	</table>
-
-<br />
-<br />
-<br />
-
-
-	<table>
-		<tr>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td class="no_right">&nbsp;</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td class="no_right">&nbsp;</td>
-		</tr>
-		<tr>
-			<td class="no_border">&nbsp;</td>
-			<td class="no_border">&nbsp;</td>
-			<td class="no_right no_border">&nbsp;</td>
-		</tr>
-	</table>
-
-<br />
-<br />
-<br />
-	
-	<div class="row">
-	<div class="tictac"></div><div class="tictac"></div><div class="tictac"></div>
-	</div>
-	<div class="row">
-	<div class="tictac"></div><div class="tictac"></div><div class="tictac"></div>
-	</div>
-	<div class="row">
-	<div class="tictac"></div><div class="tictac"></div><div class="tictac"></div>
-	</div>
-
+		<div class="row">
+			<div id="r1c0" class="box" onclick="clicked(this)">&nbsp;</div>
+			<div id="r1c1" class="box" onclick="clicked(this)">&nbsp;</div>
+			<div id="r1c2" class="box no_right" onclick="clicked(this)">&nbsp;</div>
+		</div>
+ 
+		<div class="row">
+			<div id="r2c0" class="box no_bottom" onclick="clicked(this)">&nbsp;</div>
+			<div id="r2c1" class="box no_bottom" onclick="clicked(this)">&nbsp;</div>
+			<div id="r2c2" class="box no_right no_bottom" onclick="clicked(this)">&nbsp;</div>
+		</div>
+	</div>	
 </body>
 </html>
+
+
 
 
 
